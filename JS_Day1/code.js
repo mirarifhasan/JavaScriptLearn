@@ -4,59 +4,65 @@ console.log("hello");
 var a;
 console.log(a); //Undefined variable 'a'
 
-var a=100; //Same variable name can be work for 'var'
-a=200;
-console.log(a);
+var a = 100; //Same variable name can be work for 'var'
+a = 200;
+console.log(a);  //Print 200
 
-let b=10;
-b=5;
-console.log(b);
+let b = 10;
+b = 5;
+console.log(b); //print 5
 
-const c=7;
-console.log(c);
+const c = 7;
+console.log(c); //print 7. const variable can not reassigned
 
 //Taking input in 'name' variable
-//Prompt takes string(by default)
+//prompt takes string(by default)
 let name = prompt("What is your name?");
 console.log("My name is " + name);
 
-//'===' use for matching two datatypes and values
-//'==' use for matching two value
+//'===' use for matching two datatypes and values both
+//'==' use for matching only two value
 
 //Adding two nembers
-let d = prompt("Enter first number");
-let g = parseInt(d);
-let e = prompt("Enter second number");
-let h = parseInt(e);
+let fn = prompt("Enter first number");
+let n1 = parseInt(fn);
+let sn = prompt("Enter second number");
+let n2 = parseInt(sn);
 
-let i = g + h;
-console.log(typeof i);
-console.log("Sum is: " + i);
+let sum = n1 + n2;
+console.log(typeof sum); //Number
+console.log("Sum is: " + sum);
 
 //prompt and parseInt together 
 console.log("Your age is " + parseInt(prompt("Enter your age")));
 
-let j = parseInt(prompt("Enter Lucky Number"));
-if(j=='2018'){
-    console.log("It is 2018");
+let j = parseInt(prompt("Enter Lucky Number for if-else"));
+//if-else
+
+if(j=='2018'){ //if j=2018 or j='2018' whateven string or integrt
+    console.log("It is a string '2018'");
+}
+else if(j==2018){ //This 'else-if' will not execute for 'if' condition
+    console.log("2018 is integer");
 }
 else if(j=='2019'){
-    console.log("It is 2019");
+    console.log("It is a string '2019'");
 }
-else if(j==2){ //Checking integer value
-    console.log("Integer 2");
+else if(j==2){ //Checking integer/string both value
+    console.log("2 is integer");
 }
 else{
     console.log("Not in Database");
 }
 
-let k = parseInt(prompt("Enter k"));
-let l = parseInt(prompt("Enter l"));
-let m = parseInt(prompt("Enter m"));
+//Finding maximum value
+let x = parseInt(prompt("Enter 1st Number"));
+let y = parseInt(prompt("Enter 2nd NUmber"));
+let z = parseInt(prompt("Enter 3rd Number"));
 
-if(k>l && k>m) 
-    console.log(k + " (k) is the biggest");
-else if(l>k && l>m)
-    console.log(l + " (l) is the biggest");
+if(x>y && x>z) 
+    console.log(x + " (x) is the biggest");
+else if(y>x && y>z)
+    console.log(y + " (y) is the biggest");
 else
-    console.log(m + " (m) is the biggest");
+    console.log(z + " (z) is the biggest");
