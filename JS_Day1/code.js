@@ -20,8 +20,12 @@ console.log(c); //print 7. const variable can not reassigned
 let name = prompt("What is your name?");
 console.log("My name is " + name);
 
-//'===' use for matching two datatypes and values both
-//'==' use for matching only two value
+/*
+'===' use for matching two datatypes and values both
+'==' use for matching only two value
+3 == '3' is true
+3 === '3' is false
+*/
 
 //Adding two nembers
 let fn = prompt("Enter first number");
